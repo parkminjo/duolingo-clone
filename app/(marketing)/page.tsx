@@ -21,12 +21,12 @@ const HomePage = () => {
         <h1 className="max-w-[480px] text-center text-xl font-bold text-neutral-600 lg:text-3xl">
           Learn, practice, and master new languages with Lingo
         </h1>
-        <ClerkLoading>
-          <Loader className="text-muted-foreground h-5 w-5 animate-spin" />
-        </ClerkLoading>
-        <ClerkLoaded>
-          <SignedOut>
-            <div className="flex w-full flex-col gap-3">
+        <div className="flex w-full max-w-[330px] flex-col items-center gap-y-3">
+          <ClerkLoading>
+            <Loader className="text-muted-foreground h-5 w-5 animate-spin" />
+          </ClerkLoading>
+          <ClerkLoaded>
+            <SignedOut>
               <SignUpButton>
                 <Button size="lg" variant="secondary" className="w-full">
                   Get Started
@@ -37,14 +37,14 @@ const HomePage = () => {
                   I already have an account
                 </Button>
               </SignInButton>
-            </div>
-          </SignedOut>
-          <SignedIn>
-            <Button size="lg" variant="secondary" className="w-full" asChild>
-              <Link href="/learn">Continue Learning</Link>
-            </Button>
-          </SignedIn>
-        </ClerkLoaded>
+            </SignedOut>
+            <SignedIn>
+              <Button size="lg" variant="secondary" className="w-full" asChild>
+                <Link href="/learn">Continue Learning</Link>
+              </Button>
+            </SignedIn>
+          </ClerkLoaded>
+        </div>
       </div>
     </div>
   );
