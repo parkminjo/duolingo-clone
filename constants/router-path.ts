@@ -4,4 +4,5 @@ export const ROUTER_PATH = {
   LEADERBOARD: "/leaderboard",
   QUESTS: "/quests",
   SHOP: "/shop",
+  COURSES: "/courses",
 };
